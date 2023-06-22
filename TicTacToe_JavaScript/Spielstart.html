@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spielstart</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function zurueckZurAuswahl() {
+            window.location.href = '../Spielstart.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="centered-content">
+        <h1>Wähle deine Schwierigkeit!</h1>
+        <button id="btnOne" onclick="window.location.href = 'Aufgabe2/index.html';">PLAYER vs PLAYER</button>
+        <button id="btnTwo" onclick="window.location.href = 'Aufgabe3/index.html';">PLAYER vs CPU</button>
+        <button id="btnThree" onclick="showConfirmationPopup('Aufgabe3bot/index.html');">PLAYER vs bot <br> experimental</button>
+        <button id="pdfBtn1" onclick="openOrDownloadPDF('Aufgabe1/aufgabe-01.pdf')">PDF mit Aufgabe1 <br>inklusive Lösungen</button>
+        <button id="pdfBtn2" onclick="openOrDownloadPDF('Aufgabe2/aufgabe-02.pdf')">PDF mit Aufgabe2</button>
+        <button id="pdfBtn3" onclick="openOrDownloadPDF('Aufgabe3/aufgabe-03.pdf')">PDF mit Aufgabe3</button>
+    </div>
+    <button class="top-left-button" onclick="zurueckZurAuswahl();">Zurück zur Auswahl</button>
+    <footer>
+        <p>TicTacToe in JavaScript in 2 Versionen &copy; 2023 Andreas Brühl</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

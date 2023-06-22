@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>FlappyBird in JavaScript 2.0</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    function zurueckZurAuswahl() {
+        window.location.href = '../Spielstart.html';
+    }
+</script>
+</head>
+<body>
+  <h1>FlappyBird in JavaScript 2.0</h1>
+  <button id="difficultyButton">Schwierigkeitsgrad ändern</button>
+  <p>🡑 Wähle deinen Schwierigkeitsgrad 🡑<span id="difficultyDisplay"></span></p><!-- not working properly atm -->
+  <p>Beliebige Taste zum Starten und Spielen verwenden!</p>
+  <canvas id="canvas" width=1024 height=400></canvas>
+  <div id="highscore-container">
+    <h2>Highscore</h2>
+    <table id="highscore-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+          <th>difficulty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Spieler</td>
+          <td>0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Spieler</td>
+          <td>0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Spieler</td>
+          <td>0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Spieler</td>
+          <td>0</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Spieler</td>
+          <td>0</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="difficulties">
+    <h3>Die Schwierigkeitsgrade</h3>
+    <p>1 - EASY</p>
+    <p>2 - MEDIUM</p>
+    <p>3 - HARD</p>
+    <p>4 - INSANE</p>
+  </div>
+  <div><button id="reloadButton">Neu laden</button></div>
+  <div><button id="deleteHighscoresButton">Highscores löschen</button></div>
+  <script src="script.js"></script>
+
+  <footer>
+    <p>FlappyBird in JavaScript Version 2.0 &copy; 2023 Andreas Brühl</p>
+</footer>
+<button class="top-left-button" onclick="zurueckZurAuswahl();">Zurück zur Auswahl</button>
+</body>
+</html>

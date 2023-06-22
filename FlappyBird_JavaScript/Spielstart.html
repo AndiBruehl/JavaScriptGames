@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spielstart</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function zurueckZurAuswahl() {
+            window.location.href = '../Spielstart.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="centered-content">
+        <h1>Wähle eine Option!</h1>
+        <button id="btnOne" onclick="window.location.href = 'Version 0.5 Basic/FlappyBirdJavaScript.html';">Version 0.5 Basic</button>
+        <button id="btnTwo" onclick="window.location.href = 'Version 1.0 Simple/FlappyBirdJavaScript.html';">Version 1.0 Simple</button>
+        <button id="btnTwo" onclick="window.location.href = 'Version 2.0 Advanced/FlappyBirdJavaScript.html';">Version 2.0 Advanced</button>
+    </div>
+
+    <button class="top-left-button" onclick="zurueckZurAuswahl();">Zurück zur Auswahl</button>
+
+    <footer>
+        <p>FlappyBird in JavaScript&copy; 2023 Andreas Brühl</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

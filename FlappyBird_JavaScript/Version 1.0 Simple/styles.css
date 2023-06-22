@@ -1,0 +1,159 @@
+body {
+  background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: left; 
+  text-decoration: overline underline;
+  color: red;
+  font-style: italic;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: overline underline;
+  color: red;
+  font-style: italic;
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center;
+  color: red;
+  font-style: italic;
+  text-decoration: underline;
+  box-sizing: border-box;
+  margin-left: 30px;
+}
+
+p{
+  text-align: center;
+  color: red;
+  font-style: bold;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+#canvas {
+  border: 1px solid black;
+  background: rgb(13, 0, 227);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(13, 0, 227, 1) 0%,
+    rgba(45, 110, 173, 1) 14%,
+    rgba(228, 250, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(13, 0, 227, 1) 0%,
+    rgba(45, 110, 173, 1) 14%,
+    rgba(228, 250, 255, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(13, 0, 227, 1) 0%,
+    rgba(45, 110, 173, 1) 14%,
+    rgba(228, 250, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr="#0d00e3",
+    endColorstr="#e4faff",
+    GradientType=1
+  );
+  box-sizing: border-box;
+}
+
+.difficulties {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, 80%);
+}
+
+
+#highscore-container {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%); 
+}
+
+#highscore-table {
+  width: 200px;
+  border-collapse: collapse;
+}
+
+#highscore-table th,
+#highscore-table td {
+  padding: 5px;
+  text-align: center;
+}
+
+#highscore-table th {
+  background-color: #eee;
+}
+
+#highscore-table td {
+  background-color: #fff;
+}
+
+#reloadButton,
+#deleteHighscoresButton, #difficultyButton {
+  margin: 5px;
+  font-size: 16px;
+  background-color: green;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  box-sizing: border-box;
+}
+
+#deleteHighscoresButton:hover,
+#reloadButton:hover, #difficultyButton:hover {
+  background-color: red;
+}
+
+#deleteHighscoresButton:active,
+#reloadButton:active, #difficultyButton:active {
+  background-color: blue;
+}
+footer {
+  color: #fff;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+.top-left-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  margin: 50px;
+  font-size: 16px;
+  background-color: green;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  box-sizing: border-box;
+}
+
+.top-left-button:hover {
+  background-color: red;
+}
+
+.top-left-button:active {
+  background-color: blue;
+}
